@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<!--
+/**
+ * Copyright 2010 The Apache Software Foundation
+ *
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<configuration>
+
+<property>    
+     <name>hbase.rootdir</name>    
+     <value>hdfs://192.168.188.208:9090/hbase</value>  
+</property>
+
+<property>    
+     <name>hbase.cluster.distributed</name>    
+     <value>true</value>    
+</property>
+
+<property>    
+    <name>hbase.zookeeper.property.clientPort</name>  
+    <value>2181</value>    
+</property> 
+
+<property>
+    <name>hbase.hregion.majorcompaction</name>
+    <value>0</value>
+</property>
+
+<property>
+    <name>hbase.hstore.compaction.min</name>
+    <value>15</value>
+</property>
+
+<property>
+    <name>hbase.hstore.compaction.max</name>
+    <value>30</value>
+</property>
+
+<property>
+    <name>hbase.hstore.compaction.kv.max</name>
+    <value>20</value>
+</property>
+
+<property>
+    <name>hbase.regionserver.maxlogs</name>
+    <value>16</value>
+</property> 
+              
+<property>
+    <name>hbase.regionserver.hlog.blocksize</name>
+    <value>134217728</value>
+</property> 
+            
+<property>
+    <name>hbase.hregion.memstore.mslab.enabled</name>
+    <value>true</value>
+</property> 
+              
+<property>
+    <name>hbase.hregion.memstore.mslab.chunksize</name>
+    <value>2097152</value>
+</property> 
+                
+<property>
+    <name>hbase.hregion.memstore.mslab.max.allocation</name>
+    <value>262144</value>
+</property> 
+
+<property>
+    <name>hbase.hregion.max.filesize</name>
+    <value>107374182400</value>
+</property>
+
+<property>
+    <name>hbase.hregion.memstore.flush.size</name>
+    <value>536870912</value>
+</property>
+
+<property>
+    <name>hbase.hregion.preclose.flush.size</name>
+    <value>5242880</value>
+</property>
+
+<property>
+    <name>hbase.hstore.blockingStoreFiles</name>
+    <value>1000</value>
+</property>
+
+<property>
+    <name>hbase.regionserver.optionallogflushinterval</name>
+    <value>10000</value>
+</property>
+
+<property>
+    <name>hbase.hregion.memstore.block.multiplier</name>
+    <value>8</value>
+</property>
+
+<property>
+    <name>zookeeper.session.timeout</name>
+    <value>60000</value>
+</property>
+
+<property>
+    <name>hbase.regionserver.thread.compaction.large</name>
+    <value>5</value>
+</property>
+
+<property>
+    <name>hbase.regionserver.thread.compaction.small</name>
+    <value>5</value>
+</property>
+             
+<property>
+    <name>hbase.regionserver.handler.count</name>
+    <value>300</value>
+</property>
+                              
+<property>
+    <name>hbase.regionserver.lease.period</name>
+    <value>720000</value>
+</property>
+              
+<property>
+    <name>hbase.rpc.timeout</name>
+    <value>720000</value>
+</property>
+
+<property>
+    <name>hbase.client.write.buffer</name>
+    <value>5242880</value>
+</property>
+
+
+<property>
+    <name>hfile.block.cache.size</name>
+    <value>0.45</value>
+</property>
+
+<property>
+    <name>hbase.regionserver.global.memstore.upperLimit</name>
+    <value>0.3</value>
+</property>
+
+<property>
+    <name>hbase.regionserver.global.memstore.lowerLimit</name>
+   <value>0.35</value>
+</property> 
+
+<property>  
+    <name>hbase.zookeeper.quorum</name>  
+<value>192.168.188.208,192.168.188.209,192.168.188.210,192.168.188.115,192.168.188.116,192.168.188.117</value>
+</property>
+
+<property>  
+    <name>hbase.zookeeper.property.dataDir</name>  
+    <value>/var/lib/zookeeper</value>  
+</property>
+
+ 
+</configuration>
